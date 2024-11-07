@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //      1
+        //     1 2
+        //    1 2 3
+        //   1 2 3 4
+        //  1 2 3 4 5
+        //   1 2 3 4
+        //    1 2 3 
+        //     1 2
+        //      1    
+
+        num=5
+        for(i=1;i<=num;i++){
+            s=""
+            for(sp=0;sp<num-i;sp++){
+                s=s+" "
+            }
+            for(j=1;j<=i;j++){
+                s=s+j+" "
+            }
+            console.log(s)
+        }
+        for(i=num-1;i>=1;i--){
+            s=""
+            for(sp=0;sp<num-i;sp++){
+                s=s+" "
+            }
+            for(j=i;j>=1;j--){
+                s=s+j+" "
+            }
+            console.log(s)
+        }
+    </script>
+</body>
+</html>

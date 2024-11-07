@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 2.take a string and return the count of uppercase and lower case characters in it
+       //    task-2
+       let str1 = "MaNGooBaNaNa";
+       uppercaseCount = 0;
+      lowercaseCount = 0;
+      for (let i of str1) {
+    if (i === i.toUpperCase() && i!== i.toLowerCase()) {
+        uppercaseCount++;
+    }  
+    else if (i === i.toLowerCase() && i!== i.toUpperCase()) {
+        lowercaseCount++;
+    }
+   }
+     console.log("Uppercase characters is:" + uppercaseCount);
+     console.log("Lowercase characters is:" + lowercaseCount);
+
+    </script>
+</body>
+</html>

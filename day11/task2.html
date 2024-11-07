@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Find the sum of right diagonal elements
+
+        let matrix = [[1, 2, 3],
+                      [4, 5, 6],
+                      [7, 8, 9]];
+        function sumRightDiagonal(matrix) {
+        let sum = 0;
+        let a = matrix.length;
+        for (let i = 0; i < a; i++) {
+            let b = matrix[i][a - i - 1];
+            if (b) {
+                sum += b;
+            }
+        }
+        return sum;
+    }
+    console.log(sumRightDiagonal(matrix)); // Output: 12 
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ///alphabets perimid
+        //     a
+        //    a b
+        //   a b c
+        //  a b c d 
+        // a b c d e
+
+        num=5
+        for(i=1;i<=num;i++){
+            s=" "
+            Code=97
+            for(sp=0;sp<num-i;sp++){
+                s=s+"  "
+            }
+            for(j=1;j<=i;j++){
+                s=s+String.fromCharCode(Code)+"   "
+                Code++
+            }
+            console.log(s)
+        }
+    </script>
+</body>
+</html>
